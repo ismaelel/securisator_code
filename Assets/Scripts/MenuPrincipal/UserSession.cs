@@ -20,7 +20,7 @@ public static class UserSession
         PlayerPrefs.SetInt("UserParty", party);
         PlayerPrefs.Save();
 
-        Debug.Log($"🔄 OKOKOKOKOKOKOK UserSession mise à jour : {username} (Level {level})");
+        Debug.Log($"🔄 UserSession mise à jour : {username} (Level {level})");
     }
 
     public static void Logout()

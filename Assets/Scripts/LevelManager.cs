@@ -144,7 +144,7 @@ public class LevelManager : MonoBehaviour
                 Debug.Log("ENDGAME?");
                 if (www.result == UnityWebRequest.Result.Success)
                 {
-                    Debug.Log("✅ OHOHONiveau mis à jour avec succès !");
+                    Debug.Log("✅ Niveau mis à jour avec succès !");
                     Debug.Log("✅ Réponse serveur : " + www.downloadHandler.text);
                     GetUserLevel(userIdFromPrefs);
                 }
@@ -207,7 +207,6 @@ public class LevelManager : MonoBehaviour
     public async void AddScore(string category, float timeSpent, int partyNumber)
     {
       
-        Debug.Log("DEBUT ADDSCORE");
         int userId = PlayerPrefs.GetInt("UserId", -1);
         if (userId == -1)
         {

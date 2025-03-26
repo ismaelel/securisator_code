@@ -993,85 +993,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1007421237}
   m_CullTransparentMesh: 1
---- !u!1 &1009486970
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1009486973}
-  - component: {fileID: 1009486972}
-  - component: {fileID: 1009486971}
-  m_Layer: 5
-  m_Name: Time
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1009486971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1009486970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 65
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 70
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: feedback
---- !u!222 &1009486972
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1009486970}
-  m_CullTransparentMesh: 1
---- !u!224 &1009486973
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1009486970}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1878839136}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.6326953}
-  m_AnchorMax: {x: 0.5, y: 0.6326953}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1030.4644, y: 94.85803}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1037094438
 GameObject:
   m_ObjectHideFlags: 0
@@ -1844,7 +1765,6 @@ RectTransform:
   - {fileID: 1307712293}
   - {fileID: 1007421238}
   - {fileID: 1442503475}
-  - {fileID: 1009486973}
   - {fileID: 939998260}
   - {fileID: 658310602}
   - {fileID: 1919874969}
@@ -1935,20 +1855,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: {fileID: 1183876155}
   questions:
-  - questionText: "1\uFE0F\u20E3 Avant d\u2019utiliser une machine, que devez-vous
-      faire en premier ?"
+  - questionText: "1 - Avant d\u2019utiliser une machine, que devez-vous faire en
+      premier ?"
     answers:
     - "A) Lire et suivre les consignes de s\xE9curit\xE9."
     - "B) Lancer la machine imm\xE9diatement."
     - "C) Appuyer sur tous les boutons pour voir ce qu\u2019ils font."
     correctAnswerIndex: 0
-  - questionText: "2\uFE0F\u20E3 Que faire si une machine pr\xE9sente un dysfonctionnement
+  - questionText: "2 - Que faire si une machine pr\xE9sente un dysfonctionnement
       ?  "
     answers:
     - "A) Continuer \xE0 l\u2019utiliser pour ne pas perdre de temps."
     - "B) Couper l\u2019alimentation et pr\xE9venir un responsable. "
     - "C) Essayer de la r\xE9parer soi-m\xEAme sans formation. "
     correctAnswerIndex: 1
+  - questionText: "3 - Pourquoi est-il interdit de porter des v\xEAtements amples
+      ou des bijoux pr\xE8s des machines ?"
+    answers:
+    - "A) Pour \xE9viter qu\u2019ils ne soient happ\xE9s par la machine."
+    - "B) Parce que c\u2019est interdit sans raison."
+    - "C) Parce que \xE7a consomme plus d\u2019\xE9nergie."
+    correctAnswerIndex: 0
+  - questionText: "4 - Comment s\xE9curiser une machine avant une maintenance ?"
+    answers:
+    - "A) \xC9teindre la machine et retirer l\u2019outil bloqu\xE9."
+    - "B) Couper l\u2019alimentation et mettre un cadenas de consignation"
+    - "C) Demander \xE0 un coll\xE8gue de surveiller pendant qu\u2019on travaille."
+    correctAnswerIndex: 0
   questionText: {fileID: 456837099}
   buttonA: {fileID: 939998263}
   buttonB: {fileID: 658310605}

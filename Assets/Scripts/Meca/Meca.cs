@@ -111,7 +111,7 @@ public class Meca : MonoBehaviour
         buttonA.gameObject.SetActive(false);
         buttonB.gameObject.SetActive(false);
         buttonC.gameObject.SetActive(false);
-        
+        questionText.gameObject.SetActive(false);
         buttonEnd.gameObject.SetActive(true);
 
         // Ajouter ici la logique pour terminer le jeu ou avancer dans le scénario

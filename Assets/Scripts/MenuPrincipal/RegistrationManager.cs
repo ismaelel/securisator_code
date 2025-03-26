@@ -58,7 +58,6 @@ public class RegistrationManager : MonoBehaviour
 
     IEnumerator SendRegistrationData(string username, string hashedPassword)
     {
-        Debug.Log("DANS LA COROUTINE " + username + " : " + hashedPassword);
         // Préparer les données pour l'envoi
         WWWForm form = new WWWForm();
         form.AddField("username", username);

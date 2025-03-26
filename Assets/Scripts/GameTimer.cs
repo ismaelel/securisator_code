@@ -7,20 +7,18 @@ public class GameTimer : MonoBehaviour
 
     private float startTime;
     private bool isRunning = false;
-    public Text timerText; // À assigner dans l'Inspector
+   // public Text timerText; // À assigner dans l'Inspector
     private float penaltyTime = 0f; // Temps ajouté en cas de mauvaise réponse
 
     private void Awake()
     {
         if (Instance == null)
         {
-            Debug.Log("PROBELEM1");
             Instance = this;
             DontDestroyOnLoad(gameObject); // Garde l'objet actif même après un changement de scène
         }
         else
         {
-            Debug.Log("PROBELEM1£2");
            // Destroy(gameObject);
         }
         
@@ -32,7 +30,7 @@ public class GameTimer : MonoBehaviour
         if (isRunning) // Met à jour le temps SEULEMENT si le timer tourne
         {
             float elapsedTime = Time.time - startTime + penaltyTime;
-            UpdateTimerUI(elapsedTime);
+            //UpdateTimerUI(elapsedTime);
         }
     }
 
@@ -53,18 +51,18 @@ public class GameTimer : MonoBehaviour
         return elapsedTime;
     }
 
-    private void UpdateTimerUI(float elapsedTime)
-    {
-        if (timerText != null)
-        {
-            timerText.text = "⏳ Temps : " + elapsedTime.ToString("F2") + "s";
-        }
-        else
-        {
-            Debug.LogWarning("⚠️ TimerText n'est pas assigné, désactivation du Timer !");
-            isRunning = false;  // Stoppe le timer pour éviter les mises à jour inutiles
-        }
-    }
+    // private void UpdateTimerUI(float elapsedTime)
+    // {
+    //     if (timerText != null)
+    //     {
+    //         timerText.text = "⏳ Temps : " + elapsedTime.ToString("F2") + "s";
+    //     }
+    //     else
+    //     {
+    //         Debug.LogWarning("⚠️ TimerText n'est pas assigné, désactivation du Timer !");
+    //         isRunning = false;  // Stoppe le timer pour éviter les mises à jour inutiles
+    //     }
+    // }
 
     public string getTime()
     {

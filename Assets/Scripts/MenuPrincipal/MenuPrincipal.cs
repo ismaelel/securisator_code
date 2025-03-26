@@ -25,6 +25,11 @@ public class MenuPrincipal : MonoBehaviour
     {
         SceneManager.LoadScene("SignUp");
     }
+    
+    public void GoToHowToPlay()
+    {
+        SceneManager.LoadScene("HowToPlay");
+    }
     public void Play()
     {
         Debug.Log("Play LEVEL" + UserSession.CurrentUserLevel);

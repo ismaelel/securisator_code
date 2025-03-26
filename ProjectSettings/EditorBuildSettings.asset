@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Electricity/Elec.unity
     guid: 8bcb0c9c6e5a21d4a830da0d31cc5b8d
   - enabled: 1
+    path: Assets/Scenes/Menus/HowToPlay.unity
+    guid: e68bddd44000b2943a23513878e16b08
+  - enabled: 1
     path: Assets/Scenes/Electricity/ElecTest.unity
     guid: 0484be77b490ae14fa083ee4dc3ec93e
   - enabled: 1
