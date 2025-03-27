@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class DisplayOnCollision : MonoBehaviour
 {
-    //public GameObject dialogueBox; // Assigne le Panel dans l'inspecteur
+    //public GameObject dialogueBox; 
     public GameObject btn;
     
     void Start()

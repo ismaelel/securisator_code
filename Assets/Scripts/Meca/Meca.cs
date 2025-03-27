@@ -102,7 +102,7 @@ public class Meca : MonoBehaviour
 
         // Passer à la question suivante après un délai
         currentQuestionIndex++;
-        Invoke("ShowQuestion", 1f);  // Attendre 2 secondes avant de passer à la question suivante
+        Invoke("ShowQuestion", 1f);  // Attendre 1 seconde avant de passer à la question suivante
     }
 
     void EndQuiz()
@@ -114,6 +114,5 @@ public class Meca : MonoBehaviour
         questionText.gameObject.SetActive(false);
         buttonEnd.gameObject.SetActive(true);
 
-        // Ajouter ici la logique pour terminer le jeu ou avancer dans le scénario
     }
 }

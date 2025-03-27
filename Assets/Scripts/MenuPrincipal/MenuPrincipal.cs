@@ -69,7 +69,7 @@ public class MenuPrincipal : MonoBehaviour
     {
         Logout();
         Debug.Log("Fermeture du jeu.");
-        Application.Quit(); // Quitte le jeu (ne fonctionne pas dans l'éditeur)
+        Application.Quit();
 
         // Permet de simuler la fermeture dans l'éditeur Unity
         #if UNITY_EDITOR

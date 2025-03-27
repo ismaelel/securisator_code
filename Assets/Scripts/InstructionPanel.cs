@@ -159,7 +159,7 @@ public class InstructionPanel : MonoBehaviour
 
     public void ClosePanel()
     {
-        panel.SetActive(false); // Masquer le panneau
+        panel.SetActive(false); 
     }
 
     public void OpenInstructions()
@@ -190,7 +190,7 @@ public class InstructionPanel : MonoBehaviour
 
 
 
-    // 🎵 Fonction pour jouer le son correspondant à l'instruction actuelle
+    // Fonction pour jouer le son correspondant à l'instruction actuelle
     void PlayInstructionSound()
     {
         if (audioSource != null && audioDictionary.ContainsKey(selectedInstructionsKey))

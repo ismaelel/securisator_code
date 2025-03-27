@@ -7,7 +7,7 @@ public class GameTimer : MonoBehaviour
 
     private float startTime;
     private bool isRunning = false;
-   // public Text timerText; // À assigner dans l'Inspector
+   // public Text timerText; 
     private float penaltyTime = 0f; // Temps ajouté en cas de mauvaise réponse
 
     private void Awake()
@@ -27,7 +27,7 @@ public class GameTimer : MonoBehaviour
 
     private void Update()
     {
-        if (isRunning) // Met à jour le temps SEULEMENT si le timer tourne
+        if (isRunning) 
         {
             float elapsedTime = Time.time - startTime + penaltyTime;
             //UpdateTimerUI(elapsedTime);

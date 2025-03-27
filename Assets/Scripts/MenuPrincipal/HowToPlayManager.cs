@@ -39,13 +39,11 @@ public class HowToPlayManager : MonoBehaviour
             if (currentStep == images.Length - 1)
             {
                 continueButton.gameObject.SetActive(false);
-                //continueButton.GetComponentInChildren<Text>().text = "Terminer";
             }
         }
         else
         {
             Debug.Log("✅ Tutoriel terminé !");
-            // Ici, tu peux charger une autre scène ou fermer la fenêtre
             gameObject.SetActive(false); // Cache le tutoriel
         }
         

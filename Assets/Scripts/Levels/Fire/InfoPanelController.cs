@@ -11,7 +11,7 @@ public class InfoPanelController : MonoBehaviour
         // Au lancement, afficher le panneau
         infoPanel.SetActive(true);
 
-        // Ajouter un écouteur pour fermer le panneau
+        // Ajoute un écouteur pour fermer le panneau
         closeButton.onClick.AddListener(CloseInfoPanel);
     }
 

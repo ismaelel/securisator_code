@@ -3,7 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class SessionManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         string currentScene = SceneManager.GetActiveScene().name;
@@ -28,15 +27,10 @@ public class SessionManager : MonoBehaviour
             if (currentScene != "SignIn")
             {
                 Debug.Log("Aucune session détectée. Redirection vers l'écran de connexion.");
-                SceneManager.LoadScene("SignIn"); // Redirige vers l'écran de connexion/inscription
+                SceneManager.LoadScene("SignIn"); // Redirige vers l'écran de connexion
             }
             
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
