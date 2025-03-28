@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 public class LevelManager : MonoBehaviour
 {
     private string updateLevelURL = GlobalConfig.ServerURL + "update_level.php";
-    private string getLevelURL = GlobalConfig.ServerURL + "get_level.php"; // Nouveau script PHP
+    private string getLevelURL = GlobalConfig.ServerURL + "get_level.php"; 
     private string endGameURL = GlobalConfig.ServerURL + "end_game.php";
-    private string insertScoreURL = GlobalConfig.ServerURL + "insert_score.php"; // Remplace par ton URL PHP
+    private string insertScoreURL = GlobalConfig.ServerURL + "insert_score.php"; 
     
     
     private void ProcessResponse(string jsonResponse)
