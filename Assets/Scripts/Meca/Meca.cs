@@ -113,6 +113,7 @@ public class Meca : MonoBehaviour
         buttonC.gameObject.SetActive(false);
         questionText.gameObject.SetActive(false);
         buttonEnd.gameObject.SetActive(true);
+        answerFeedbackText.color = Color.white;
 
     }
 }

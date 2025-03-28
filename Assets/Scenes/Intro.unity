@@ -739,7 +739,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e51af75fa7008884ca015ca076219e19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: MenuPrincipal
+  sceneToLoad: Elec
 --- !u!114 &1520480566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1471,8 +1471,12 @@ PrefabInstance:
       value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 3983818146826324558, guid: d535557e20137d142b8c5b8d044b6652, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3983818146826324558, guid: d535557e20137d142b8c5b8d044b6652, type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 100
+      value: 85
       objectReference: {fileID: 0}
     - target: {fileID: 5025042725570889291, guid: d535557e20137d142b8c5b8d044b6652, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1552,7 +1556,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6596630405018303090, guid: d535557e20137d142b8c5b8d044b6652, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1145.7689
+      value: 1049.2
       objectReference: {fileID: 0}
     - target: {fileID: 6596630405018303090, guid: d535557e20137d142b8c5b8d044b6652, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1560,7 +1564,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6596630405018303090, guid: d535557e20137d142b8c5b8d044b6652, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -48.263
       objectReference: {fileID: 0}
     - target: {fileID: 6910848395204512872, guid: d535557e20137d142b8c5b8d044b6652, type: 3}
       propertyPath: m_Color.a
@@ -1675,8 +1679,8 @@ RectTransform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 532418351}
   - {fileID: 1520480563}
+  - {fileID: 532418351}
   - {fileID: 1774947747}
   - {fileID: 1537789614}
   - {fileID: 1591567092}

@@ -8,7 +8,7 @@ public class TriggerInterruptor : MonoBehaviour
     public GameObject image2;
     public static bool cableActivated = false; // Variable partagée
 
-    private bool playerIsNear = false;
+   // private bool playerIsNear = false;
 
     void Start()
     {
@@ -26,7 +26,7 @@ public class TriggerInterruptor : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            playerIsNear = true;
+         //   playerIsNear = true;
             btn.SetActive(true);
         }
     }
@@ -35,7 +35,7 @@ public class TriggerInterruptor : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            playerIsNear = false;
+          //  playerIsNear = false;
             btn.SetActive(false);
         }
     }

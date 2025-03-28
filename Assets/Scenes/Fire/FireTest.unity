@@ -191,21 +191,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &140617613
-Transform:
+--- !u!224 &140617613
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 140617611}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8564528, y: 1.6482689, z: -0.043840446}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.49182594, y: 0.49182594, z: 0.49182594}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1402023361}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.04, y: 1.58}
+  m_SizeDelta: {x: 6.51, y: 5.44}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &155178121
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -322,11 +326,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3188619864125025193, guid: 21e14dbb32def24469ecf712800eab0f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 900.3133
+      value: 1425
       objectReference: {fileID: 0}
     - target: {fileID: 3188619864125025193, guid: 21e14dbb32def24469ecf712800eab0f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 233.7429
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 3188619864125025193, guid: 21e14dbb32def24469ecf712800eab0f, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -359,6 +363,10 @@ PrefabInstance:
     - target: {fileID: 3809475968057034280, guid: 21e14dbb32def24469ecf712800eab0f, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4489485677776363457, guid: 21e14dbb32def24469ecf712800eab0f, type: 3}
+      propertyPath: m_Text
+      value: NIVEAU SUIVANT
       objectReference: {fileID: 0}
     - target: {fileID: 4489485677776363457, guid: 21e14dbb32def24469ecf712800eab0f, type: 3}
       propertyPath: m_FontData.m_MaxSize
@@ -566,7 +574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e51af75fa7008884ca015ca076219e19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: MenuPrincipal
+  sceneToLoad: Meca
 --- !u!4 &289118465
 Transform:
   m_ObjectHideFlags: 0
@@ -10874,7 +10882,7 @@ Transform:
   m_GameObject: {fileID: 1402023360}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.1626303, y: -850.0856, z: 5.4041605}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.6740267, y: 1.6740267, z: 1.6740267}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11187,7 +11195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6596630405018303090, guid: d535557e20137d142b8c5b8d044b6652, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1803.959
+      value: 1613.4697
       objectReference: {fileID: 0}
     - target: {fileID: 6596630405018303090, guid: d535557e20137d142b8c5b8d044b6652, type: 3}
       propertyPath: m_SizeDelta.y
